@@ -12,7 +12,10 @@
 
 ## Features
 
-The module features
+`nuxt-router-extras` can: 
+- define custom paths for page
+- specify multiple paths to single page
+- define multiple params regardless of pages directory structure
 
 ## Setup
 - Add `@alibaba-aero/nuxt-router-extras` dependency using yarn or npm to your project
@@ -32,7 +35,36 @@ The module features
 
 ## Usage
 
-Module Description
+- define custom paths for page
+
+    Simply add an annotation to page component (It doesn't matter which type of comment you use `/* */` or `//`)
+    ```
+    <script>
+    /**
+    *  @path /posts
+    **/
+    export default { }
+    </script>
+    ```
+- specify multiple paths to single page
+
+    Add multiple annotations
+    ```
+    <script>
+    // @path /
+    // @path /index
+    // @path /main
+    export default { }
+    </script>
+    ```
+- define multiple params regardless of pages directory structure
+
+    ```
+    <script>
+    // @path /post/:id/:title?
+    export default { }
+    </script>
+    ```
 
 ## Development
 
