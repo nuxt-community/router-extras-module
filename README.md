@@ -1,9 +1,9 @@
 # nuxt-router-extras
 [![npm (scoped with tag)](https://img.shields.io/npm/v/nuxt-router-extras/latest.svg?style=flat-square)](https://npmjs.com/package/nuxt-router-extras)
 [![npm](https://img.shields.io/npm/dt/nuxt-router-extras.svg?style=flat-square)](https://npmjs.com/package/nuxt-router-extras)
-[![CircleCI](https://img.shields.io/circleci/project/github/.svg?style=flat-square)](https://circleci.com/gh/)
-[![Codecov](https://img.shields.io/codecov/c/github/.svg?style=flat-square)](https://codecov.io/gh/)
-[![Dependencies](https://david-dm.org//status.svg?style=flat-square)](https://david-dm.org/)
+[![CircleCI](https://img.shields.io/circleci/project/github/alibaba-aero/nuxt-router-extras.svg?style=flat-square)](https://circleci.com/gh/)
+[![Codecov](https://img.shields.io/codecov/c/github/alibaba-aero/nuxt-router-extras.svg?style=flat-square)](https://codecov.io/gh/)
+[![Dependencies](https://david-dm.org/nuxt-router-extras/status.svg?style=flat-square)](https://david-dm.org/)
 [![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
 
 > 
