@@ -1,6 +1,6 @@
-# @alibaba-aero/nuxt-router-extras
-[![npm (scoped with tag)](https://img.shields.io/npm/v/@alibaba-aero/nuxt-router-extras/latest.svg?style=flat-square)](https://npmjs.com/package/@alibaba-aero/nuxt-router-extras)
-[![npm](https://img.shields.io/npm/dt/@alibaba-aero/nuxt-router-extras.svg?style=flat-square)](https://npmjs.com/package/@alibaba-aero/nuxt-router-extras)
+# nuxt-router-extras
+[![npm (scoped with tag)](https://img.shields.io/npm/v/nuxt-router-extras/latest.svg?style=flat-square)](https://npmjs.com/package/nuxt-router-extras)
+[![npm](https://img.shields.io/npm/dt/nuxt-router-extras.svg?style=flat-square)](https://npmjs.com/package/nuxt-router-extras)
 [![CircleCI](https://img.shields.io/circleci/project/github/.svg?style=flat-square)](https://circleci.com/gh/)
 [![Codecov](https://img.shields.io/codecov/c/github/.svg?style=flat-square)](https://codecov.io/gh/)
 [![Dependencies](https://david-dm.org//status.svg?style=flat-square)](https://david-dm.org/)
@@ -18,17 +18,17 @@
 - define multiple params regardless of pages directory structure
 
 ## Setup
-- Add `@alibaba-aero/nuxt-router-extras` dependency using yarn or npm to your project
-- Add `@alibaba-aero/nuxt-router-extras` to `modules` section of `nuxt.config.js`
+- Add `nuxt-router-extras` dependency using yarn or npm to your project
+- Add `nuxt-router-extras` to `modules` section of `nuxt.config.js`
 
 ```js
 {
   modules: [
     // Simple usage
-    '@alibaba-aero/nuxt-router-extras',
+    'nuxt-router-extras',
 
     // With options
-    ['@alibaba-aero/nuxt-router-extras', { /* module options */ }],
+    ['nuxt-router-extras', { /* module options */ }],
  ]
 }
 ```

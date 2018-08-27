@@ -1,15 +1,18 @@
 {
-  "name": "@alibaba-aero/nuxt-router-extras",
-  "version": "0.0.1",
-  "description": "",
+  "name": "nuxt-router-extras",
+  "version": "0.0.0",
+  "description": " Extra Add-ons For Nuxt Router ",
   "license": "MIT",
   "contributors": [
     {
-      "name": ""
+      "name": "Ahad Birang <farnabaz@gmail.com>"
+    },
+    {
+      "name": "Pooya Parsa <pooya@pi0.ir>"
     }
   ],
   "main": "lib/module.js",
-  "repository": "https://github.com/",
+  "repository": "https://github.com/alibaba-aero/nuxt-router-extras",
   "publishConfig": {
     "access": "public"
   },
