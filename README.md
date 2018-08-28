@@ -61,6 +61,20 @@
         path: /post/:id/:title?
     </router>
     ```
+    
+## Syntax Highlighting
+### Visual Studio Code
+Install [Vetur](https://vuejs.github.io/vetur/) extension and define [custom block](https://vuejs.github.io/vetur/highlighting.html#custom-block)
+- Add `<router>` to `vetur.grammar.customBlocks` in VSCode settings
+    ```
+    "vetur.grammar.customBlocks": {
+        "docs": "md",
+        "i18n": "json",
+        "router": "yaml"
+    }
+    ```
+- Execute command `> Vetur: Generate grammar from vetur.grammar.customBlocks` in VSCode
+- Restart VSCode and enjoy awesome
 
 ## Development
 
