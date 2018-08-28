@@ -37,33 +37,29 @@
 
 - define custom paths for page
 
-    Simply add an annotation to page component (It doesn't matter which type of comment you use `/* */` or `//`)
+    Simply add a block inside vue file and define path in yaml
     ```
-    <script>
-    /**
-    *  @path /posts
-    **/
-    export default { }
-    </script>
+    <router>
+        path: /posts
+    </router>
     ```
 - specify multiple paths to single page
 
-    Add multiple annotations
+    If you want more paths for a single page, define them with aliases
     ```
-    <script>
-    // @path /
-    // @path /index
-    // @path /main
-    export default { }
-    </script>
+    <router>
+        path: /posts
+        alias:
+          - /articles
+          - /blog
+    </router>
     ```
 - define multiple params regardless of pages directory structure
 
     ```
-    <script>
-    // @path /post/:id/:title?
-    export default { }
-    </script>
+    <router>
+        path: /post/:id/:title?
+    </router>
     ```
 
 ## Development
