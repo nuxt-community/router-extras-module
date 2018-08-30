@@ -37,7 +37,7 @@
 
 - define custom paths for page
 
-    Simply add a block inside vue file and define path in yaml
+    Simply add a block inside vue file and define path in [Yaml](https://en.wikipedia.org/wiki/YAML)
     ```
     <router>
         path: /posts
