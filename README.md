@@ -61,6 +61,12 @@
         path: /post/:id/:title?
     </router>
     ```
+
+## Valid extras
+- `path`: Change page url
+- `alias`: Add single or multiple aliases to page
+- `meta`: Add Meta information to page, metas can be used by middlewares
+- `props`: Pass predefined props to page
     
 ## Syntax Highlighting
 ### Visual Studio Code
