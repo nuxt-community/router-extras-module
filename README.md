@@ -37,7 +37,7 @@
 
 - define custom paths for page
 
-    Simply add a block inside vue file and define path in yaml
+    Simply add a block inside vue file and define path in [Yaml](https://en.wikipedia.org/wiki/YAML)
     ```
     <router>
         path: /posts
@@ -61,6 +61,12 @@
         path: /post/:id/:title?
     </router>
     ```
+
+## Valid extras
+- `path`: Change page url
+- `alias`: Add single or multiple aliases to page
+- `meta`: Add Meta information to page, metas can be used by middlewares
+- `props`: Pass predefined props to page
     
 ## Syntax Highlighting
 ### Visual Studio Code
