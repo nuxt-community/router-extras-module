@@ -1,66 +1,79 @@
-# nuxt-router-extras
-[![npm (scoped with tag)](https://img.shields.io/npm/v/nuxt-router-extras/latest.svg?style=flat-square)](https://npmjs.com/package/nuxt-router-extras)
-[![npm](https://img.shields.io/npm/dt/nuxt-router-extras.svg?style=flat-square)](https://npmjs.com/package/nuxt-router-extras)
-[![CircleCI](https://img.shields.io/circleci/project/github/alibaba-aero/nuxt-router-extras.svg?style=flat-square)](https://circleci.com/gh/)
-[![Codecov](https://img.shields.io/codecov/c/github/alibaba-aero/nuxt-router-extras.svg?style=flat-square)](https://codecov.io/gh/)
-[![Dependencies](https://david-dm.org/nuxt-router-extras/status.svg?style=flat-square)](https://david-dm.org/)
-[![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
-
-> 
+# Router Extras Module
+Extra add-ons for Nuxt router
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
 ## Features
 
-`nuxt-router-extras` can: 
-- define custom paths for page
-- specify multiple paths to single page
-- define multiple params regardless of pages directory structure
+- Define custom paths for a page
+- Define multiple alias for single page
+- Define multiple params regardless of pages directory structure
 
-## Setup
-- Add `nuxt-router-extras` dependency using yarn or npm to your project
-- Add `nuxt-router-extras` to `modules` section of `nuxt.config.js`
+## Installation
 
-```js
-{
-  modules: [
-    // Simple usage
-    'nuxt-router-extras',
-
-    // With options
-    ['nuxt-router-extras', { /* module options */ }],
- ]
-}
+```bash
+yarn add @nuxtjs/router-extras
+# or
+npm i @nuxtjs/router-extras
 ```
 
 ## Usage
 
-- define custom paths for page
+Add `@nuxtjs/router-extras` to modules section of `nuxt.config.js`:
 
-    Simply add a block inside vue file and define path in [Yaml](https://en.wikipedia.org/wiki/YAML)
-    ```
-    <router>
-        path: /posts
-    </router>
-    ```
-- specify multiple paths to single page
+```js
+{
+  modules: [
+    '@nuxtjs/router-extras'
+  ]
+}
+```
+### Define custom paths for a page
 
-    If you want more paths for a single page, define them with aliases
-    ```
-    <router>
-        path: /posts
-        alias:
-          - /articles
-          - /blog
-    </router>
-    ```
-- define multiple params regardless of pages directory structure
+Simply add a block inside vue file and define path in [Yaml](https://en.wikipedia.org/wiki/YAML)
+```xml
+<router>
+    path: /posts
+</router>
+```
+### Define multiple alias for single page
 
-    ```
-    <router>
-        path: /post/:id/:title?
-    </router>
-    ```
+If you want more paths for a single page, define them with aliases
+```xml
+<router>
+    path: /posts
+    alias:
+        - /articles
+        - /blog
+</router>
+```
+### Define multiple params regardless of pages directory structure
+
+```xml
+<router>
+    path: /post/:id/:title?
+</router>
+```
+
+## Options
+
+Module default options:
+```js
+{
+  routerNativeAlias: false
+}
+```
+
+You can update them with the `routerExtras` option in `nuxt.config.js`:
+
+```js
+export default {
+  modules: ['@nuxtjs/router-extras'],
+  routerExtras: {
+    routerNativeAlias: true
+  }
+}
+```
 
 ## Valid extras
 - `path`: Change page url
@@ -72,7 +85,7 @@
 ### Visual Studio Code
 Install [Vetur](https://vuejs.github.io/vetur/) extension and define [custom block](https://vuejs.github.io/vetur/highlighting.html#custom-block)
 - Add `<router>` to `vetur.grammar.customBlocks` in VSCode settings
-    ```
+    ```json
     "vetur.grammar.customBlocks": {
         "docs": "md",
         "i18n": "json",
@@ -91,5 +104,4 @@ Install [Vetur](https://vuejs.github.io/vetur/) extension and define [custom blo
 ## License
 
 [MIT License](./LICENSE)
-
-Copyright (c) 
+Copyright (c) Nuxt Community
