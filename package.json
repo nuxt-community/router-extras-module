@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-router-extras",
+  "name": "@nuxtjs/router-extras",
   "version": "0.0.3",
   "description": " Extra Add-ons For Nuxt Router ",
   "license": "MIT",
@@ -12,7 +12,7 @@
     }
   ],
   "main": "lib/module.js",
-  "repository": "https://github.com/alibaba-aero/nuxt-router-extras",
+  "repository": "https://github.com/nuxt-community/router-extras-module",
   "publishConfig": {
     "access": "public"
   },
