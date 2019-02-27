@@ -6,7 +6,7 @@ Extra add-ons for Nuxt router
 ## Features
 
 - Define custom paths for a page
-- Define multiple alias for single page
+- Define multiple aliases for a single page
 - Define multiple params regardless of pages directory structure
 
 ## Installation
@@ -30,13 +30,13 @@ Add `@nuxtjs/router-extras` to modules section of `nuxt.config.js`:
 ```
 ### Define custom paths for a page
 
-Simply add a block inside vue file and define path in [Yaml](https://en.wikipedia.org/wiki/YAML)
+Simply add a block inside Vue file and define a path in [Yaml](https://en.wikipedia.org/wiki/YAML)
 ```xml
 <router>
     path: /posts
 </router>
 ```
-### Define multiple alias for single page
+### Define multiple aliases for single page
 
 If you want more paths for a single page, define them with aliases
 ```xml
@@ -76,9 +76,9 @@ export default {
 ```
 
 ## Valid extras
-- `path`: Change page url
+- `path`: Change page URL
 - `alias`: Add single or multiple aliases to page
-- `meta`: Add Meta information to page, metas can be used by middlewares
+- `meta`: Add Meta information to the page, meta can be used by middlewares
 - `props`: Pass predefined props to page
     
 ## Syntax Highlighting
