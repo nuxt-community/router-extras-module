@@ -20,17 +20,17 @@ describe('basic', () => {
   })
 
   test('render index', async () => {
-    let html = await get('/')
+    const html = await get('/')
     expect(html).toContain('Works!')
   })
 
   test('render main (alias of index)', async () => {
-    let html = await get('/main')
+    const html = await get('/main')
     expect(html).toContain('Works!')
   })
 
   test('render sample-path (overritten path)', async () => {
-    let html = await get('/sample-path')
+    const html = await get('/sample-path')
     expect(html).toContain('Sample Path')
   })
 
