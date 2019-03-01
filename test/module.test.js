@@ -41,4 +41,23 @@ describe('basic', () => {
       expect(error.statusCode).toEqual(404)
     }
   })
+
+  describe('Child Routes', () => {
+    test('render parent', async () => {
+      const html = await get('/parent')
+      expect(html).toContain('parent')
+    })
+
+    test('render child path', async () => {
+      const html = await get('/child-route')
+      expect(html).toContain('parent')
+      expect(html).toContain('child')
+    })
+
+    test('render child alias', async () => {
+      const html = await get('/child')
+      expect(html).toContain('parent')
+      expect(html).toContain('child')
+    })
+  })
 })

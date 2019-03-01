@@ -1,14 +1,13 @@
 <template>
   <div>
-    Works!
+    child
   </div>
 </template>
 
 <router lang="yaml">
-    path: /
+    path: /child-route
     alias:
-        - /main
-        - /index
+        - /child
 </router>
 
 <script>

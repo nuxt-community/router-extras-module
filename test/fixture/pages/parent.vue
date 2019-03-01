@@ -1,12 +1,9 @@
 <template>
   <div>
-    Sample Path
+    parent
+    <nuxt-child />
   </div>
 </template>
-
-<router>
-    path: /sample-path
-</router>
 
 <script>
 export default {
