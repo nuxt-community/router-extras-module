@@ -60,7 +60,7 @@ If you want more paths for a single page, define them with aliases
 Module default options:
 ```js
 {
-  routerNativeAlias: false
+  routerNativeAlias: true
 }
 ```
 
@@ -70,7 +70,7 @@ You can update them with the `routerExtras` option in `nuxt.config.js`:
 export default {
   modules: ['@nuxtjs/router-extras'],
   routerExtras: {
-    routerNativeAlias: true
+    routerNativeAlias: false
   }
 }
 ```
