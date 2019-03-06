@@ -1,6 +1,9 @@
 <template>
   <div>
     Works!
+    <router-link to="/">
+      some-path-name
+    </router-link>
   </div>
 </template>
 
