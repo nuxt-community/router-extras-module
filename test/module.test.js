@@ -59,4 +59,16 @@ describe('basic', () => {
       expect(html).toContain('child')
     })
   })
+
+  describe('Advanced Aliases', () => {
+    test('test object alias', async () => {
+      const html = await get('/advanced-main')
+      expect(html).toContain('Works!')
+    })
+
+    test('test object alias props', async () => {
+      const html = await get('/advanced-main')
+      expect(html).toContain('Advanced Alias Props')
+    })
+  })
 })
