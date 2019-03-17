@@ -1,6 +1,8 @@
 # Router Extras Module
 Extra add-ons for Nuxt router
 
+**Demo**: https://codesandbox.io/s/github/nuxt-community/router-extras-module
+
 [📖 **Release Notes**](./CHANGELOG.md)
 
 ## Features
