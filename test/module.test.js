@@ -1,4 +1,4 @@
-const { Nuxt, Builder } = require('nuxt-edge')
+const { Nuxt } = require('nuxt-edge')
 const request = require('request-promise-native')
 
 const config = require('./fixture/nuxt.config')
@@ -11,7 +11,6 @@ describe('basic', () => {
 
   beforeAll(async () => {
     nuxt = new Nuxt(config)
-    await new Builder(nuxt).build()
     await nuxt.listen(3000)
   }, 60000)
 
