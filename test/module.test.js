@@ -20,25 +20,12 @@ describe('basic', () => {
 
   test('render index', async () => {
     const html = await get('/')
-    expect(html).toContain('Works!')
+    expect(html).toContain('manipulate Nuxt router')
   })
 
   test('render main (alias of index)', async () => {
-    const html = await get('/main')
-    expect(html).toContain('Works!')
-  })
-
-  test('render sample-path (overritten path)', async () => {
-    const html = await get('/sample-path')
-    expect(html).toContain('Sample Path')
-  })
-
-  test('test unexisted url', async () => {
-    try {
-      await get('/sample')
-    } catch (error) {
-      expect(error.statusCode).toEqual(404)
-    }
+    const html = await get('/doc')
+    expect(html).toContain('manipulate Nuxt router')
   })
 
   describe('Child Routes', () => {
@@ -61,14 +48,16 @@ describe('basic', () => {
   })
 
   describe('Advanced Aliases', () => {
-    test('test object alias', async () => {
-      const html = await get('/advanced-main')
-      expect(html).toContain('Works!')
+    test('render installation section', async () => {
+      const html = await get('/doc/installation')
+      expect(html).toContain('Router Extras Module')
+      expect(html).toContain('yarn add @nuxtjs/router-extras')
     })
 
-    test('test object alias props', async () => {
-      const html = await get('/advanced-main')
-      expect(html).toContain('Advanced Alias Props')
+    test('render usage section', async () => {
+      const html = await get('/doc/usage')
+      expect(html).toContain('Router Extras Module')
+      expect(html).not.toContain('yarn add @nuxtjs/router-extras')
     })
   })
 })
