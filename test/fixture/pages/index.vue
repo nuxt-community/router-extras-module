@@ -38,7 +38,7 @@
                 Router Extras Module
               </h3>
               <div>
-                Nuxtjs is great framework to create universal apps, It has powerful and easy to use structure to define
+                Nuxtjs is a great framework to create universal apps, It has powerful and easy to use structure to define
                 and handle routes.
                 <br>
                 But sometimes we want more.
@@ -46,11 +46,11 @@
                 Router Extras Module help you to manipulate Nuxt router, you can:
                 <ul>
                   <li>Manipulate pages path</li>
-                  <li>Add multiple alises for single page</li>
+                  <li>Add multiple aliases for a single page</li>
                   <li>Pass props to page</li>
                   <li>Add meta fields for route</li>
                 </ul>
-                With these simple abilities you can create
+                With these simple abilities, you can create
                 <strong>
                   <nuxt-link to="/modal" class="active">
                     MORE
