@@ -1,7 +1,6 @@
+const path = require('path')
 const { Nuxt } = require('nuxt-edge')
 const request = require('request-promise-native')
-
-const config = require('./fixture/nuxt.config')
 
 const url = path => `http://localhost:3000${path}`
 const get = path => request(url(path))
@@ -9,10 +8,12 @@ const get = path => request(url(path))
 describe('basic', () => {
   let nuxt
 
-  beforeAll(async () => {
-    nuxt = new Nuxt(config)
+  test('start', async () => {
+    nuxt = new Nuxt({
+      rootDir: path.resolve(__dirname, '..', 'example')
+    })
     await nuxt.listen(3000)
-  }, 60000)
+  })
 
   afterAll(async () => {
     await nuxt.close()

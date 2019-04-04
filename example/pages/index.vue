@@ -58,42 +58,42 @@
                 </strong>
               </div>
             </div>
-      <div v-if="section === 'installation'" class="installation">
-        <pre>
+            <div v-if="section === 'installation'" class="installation">
+              <pre>
 yarn add @nuxtjs/router-extras
 
 # or via npm
 
 npm i @nuxtjs/router-extras
         </pre>
-      </div>
-      <div v-if="section === 'usage'" class="usage">
-        Add <code>@nuxtjs/router-extras</code> to modules section of nuxt.config.js:
-        <pre>
+            </div>
+            <div v-if="section === 'usage'" class="usage">
+              Add <code>@nuxtjs/router-extras</code> to modules section of nuxt.config.js:
+              <pre>
 {
   modules: [
     '@nuxtjs/router-extras'
   ]
 }
         </pre>
-        Add <code>router</code> block inside Vue file and define extras in YAML
-        <pre>
+              Add <code>router</code> block inside Vue file and define extras in YAML:
+              <pre>
 &lt;router>
   path: /posts
 &lt;/router>
         </pre>
-      </div>
-      <div v-if="section === 'path'" class="path">
-        Change page default path
-        <pre>
+            </div>
+            <div v-if="section === 'path'" class="path">
+              Change page default path:
+              <pre>
 &lt;router>
   path: /new-path
 &lt;/router>
         </pre>
-      </div>
-      <div v-if="section === 'props'" class="props">
-        Pass custom props to page component
-        <pre>
+            </div>
+            <div v-if="section === 'props'" class="props">
+              Pass custom props to page component:
+              <pre>
 &lt;router>
   props:
     pageTitle: Nuxtjs Router Extras
@@ -110,21 +110,21 @@ export default {
 }
 &lt;/script>
         </pre>
-      </div>
-      <div v-if="section === 'meta'" class="meta">
-        Add meta field to route
-        <pre>
+            </div>
+            <div v-if="section === 'meta'" class="meta">
+              Add meta field to route
+              <pre>
 &lt;router>
   meta:
     requiresAuth: true
 &lt;/router>
         </pre>
-      </div>
-      <div v-if="section === 'alias'" class="alias">
-        Define Aliases for a page and assign custom extras per alias
-        <br>
-        This is aliases of current page
-        <pre>
+            </div>
+            <div v-if="section === 'alias'" class="alias">
+              Define Aliases for a page and assign custom extras per alias
+              <br>
+              This is aliases of current page
+              <pre>
 &lt;router>
   alias:
     -
@@ -158,8 +158,8 @@ export default {
         showModal: true
 &lt;/router>
         </pre>
-      </div>
-    </div>
+            </div>
+          </div>
         </b-col>
       </b-row>
     </b-container>
@@ -268,5 +268,9 @@ a.active {
   transform: translate(-50%, -50%);
   background: white;
   z-index: 1;
+}
+
+pre {
+  margin-top: 1em;
 }
 </style>
