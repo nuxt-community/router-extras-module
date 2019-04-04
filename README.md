@@ -82,6 +82,7 @@ export default {
 - `alias`: Add single or multiple aliases to page
 - `meta`: Add Meta information to the page, meta can be used by middlewares
 - `props`: Pass predefined props to page
+- `name`: Define custom name for route.
     
 ## Syntax Highlighting
 ### Visual Studio Code
