@@ -1,7 +1,7 @@
 {
   "name": "@nuxtjs/router-extras",
   "version": "0.1.0-beta.0",
-  "description": " Extra Add-ons For Nuxt Router ",
+  "description": "Extra Add-ons for nuxt router",
   "license": "MIT",
   "contributors": [
     {
@@ -12,14 +12,14 @@
     }
   ],
   "main": "lib/module.js",
-  "repository": "https://github.com/nuxt-community/router-extras-module",
+  "repository": "nuxt-community/router-extras-module",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "dev": "nuxt test/fixture",
-    "lint": "eslint lib test",
-    "test": "nuxt-edge build test/fixture --no-lock && npm run lint && jest",
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue lib test",
+    "test": " yarn lint && nuxt build example --no-lock && jest",
     "release": "standard-version && git push --follow-tags && npm publish"
   },
   "eslintIgnore": [
