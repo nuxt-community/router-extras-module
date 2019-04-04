@@ -181,6 +181,7 @@ export default {
 
 <router lang="yaml">
   path: /
+  name: docs-main
   alias:
     - /doc
     -
