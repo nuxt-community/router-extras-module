@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [0.1.0](https://github.com/nuxt-community/router-extras-module/compare/v0.1.0-beta.0...v0.1.0) (2019-04-04)
+
+
+### Bug Fixes
+
+* **alias:** process object aliases before simple alises ([ef3f1a2](https://github.com/nuxt-community/router-extras-module/commit/ef3f1a2))
+* **extract-block:** change regex to prevent mismatch [[#5](https://github.com/nuxt-community/router-extras-module/issues/5)] ([d3f3c30](https://github.com/nuxt-community/router-extras-module/commit/d3f3c30))
+
+
+### Features
+
+* **alias:** capability to specify extras for alias ([79ffaef](https://github.com/nuxt-community/router-extras-module/commit/79ffaef))
+* support name prop ([#13](https://github.com/nuxt-community/router-extras-module/issues/13)) ([15e38eb](https://github.com/nuxt-community/router-extras-module/commit/15e38eb))
+
+
+
 # [0.1.0-beta.0](https://github.com/nuxt-community/router-extras-module/compare/v0.0.3...v0.1.0-beta.0) (2019-03-01)
 
 
