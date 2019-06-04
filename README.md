@@ -77,9 +77,11 @@ export default {
 }
 ```
 
-## Valid extras
+## Valid Extras
 - `path`: Change page URL
-- `alias`: Add single or multiple aliases to page
+- `alias`: Add single or multiple aliases to page, Module supports two type of alias
+- - **Simple Alias**: This aliases defines as simple string. If `routerNativeAlias` is true simple aliases will add as router alias, see vue-router [docs](https://router.vuejs.org/guide/essentials/redirect-and-alias.html#alias)
+- - **Clone Alias**: This aliases is in form of object and they can have their own extras. These aliase will add as individual route, they can have their own props, they can have different number of url params
 - `meta`: Add Meta information to the page, meta can be used by middlewares
 - `props`: Pass predefined props to page
 - `name`: Define custom name for route.
