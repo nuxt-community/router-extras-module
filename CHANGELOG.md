@@ -1,6 +1,16 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.1.1](https://github.com/nuxt-community/router-extras-module/compare/v0.1.0...v0.1.1) (2019-07-17)
+
+
+### Bug Fixes
+
+* lint ([ff1de08](https://github.com/nuxt-community/router-extras-module/commit/ff1de08))
+* multiple loaders configured e.g. vuetify-loader ([#44](https://github.com/nuxt-community/router-extras-module/issues/44)) ([33d0795](https://github.com/nuxt-community/router-extras-module/commit/33d0795))
+
+
 
 # [0.1.0](https://github.com/nuxt-community/router-extras-module/compare/v0.1.0-beta.0...v0.1.0) (2019-04-04)
 
