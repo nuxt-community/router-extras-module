@@ -49,6 +49,18 @@ If you want more paths for a single page, define them with aliases
         - /blog
 </router>
 ```
+Aliases can have their own props
+```xml
+<router lang="yaml">
+  path: /posts
+  alias:
+      - /articles
+      - 
+        path: /blog
+        props:
+          section: top-posts
+</router>
+```
 ### Define multiple params regardless of pages directory structure
 
 ```xml
