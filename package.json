@@ -53,6 +53,6 @@
     "jest": "^24.8.0",
     "jsdom": "^15.1.1",
     "nuxt-edge": "^2.9.0-26071216.0cd823c3",
-    "standard-version": "^6.0.1"
+    "standard-version": "^7.0.0"
   }
 }
