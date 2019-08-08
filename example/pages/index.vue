@@ -231,7 +231,7 @@ export default {
       default: 'Router Extras Module for Nuxtjs'
     }
   },
-  head() {
+  head () {
     return {
       title: this.pageTitle
     }
