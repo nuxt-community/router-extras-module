@@ -52,7 +52,7 @@
     "eslint-plugin-vue": "^5.2.3",
     "jest": "^24.8.0",
     "jsdom": "^15.1.1",
-    "nuxt-edge": "^2.9.0-26088489.c436839a",
+    "nuxt-edge": "^2.9.0-26089929.de7ed24b",
     "standard-version": "^7.0.0"
   }
 }
