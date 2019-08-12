@@ -37,7 +37,7 @@
     "js-yaml": "^3.13.1"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-config": "^1.1.2",
     "babel-eslint": "^10.0.2",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.27",
@@ -52,7 +52,7 @@
     "eslint-plugin-vue": "^5.2.3",
     "jest": "^24.8.0",
     "jsdom": "^15.1.1",
-    "nuxt-edge": "^2.9.0-26089929.de7ed24b",
+    "nuxt-edge": "^2.9.0-26092811.f65c72d7",
     "standard-version": "^7.0.0"
   }
 }
