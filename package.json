@@ -40,19 +40,19 @@
     "@nuxtjs/eslint-config": "^1.1.2",
     "babel-eslint": "^10.0.2",
     "bootstrap": "^4.3.1",
-    "bootstrap-vue": "^2.0.0-rc.27",
+    "bootstrap-vue": "^2.0.0-rc.28",
     "codecov": "^3.5.0",
     "eslint": "^6.1.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.15.0",
+    "eslint-plugin-jest": "^22.15.1",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.2.3",
-    "jest": "^24.8.0",
+    "jest": "^24.9.0",
     "jsdom": "^15.1.1",
-    "nuxt-edge": "^2.9.0-26092811.f65c72d7",
+    "nuxt-edge": "^2.9.0-26098571.2ad6bf2a",
     "standard-version": "^7.0.0"
   }
 }
