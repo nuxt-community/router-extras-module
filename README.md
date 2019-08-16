@@ -170,13 +170,16 @@ export default {
 ```
 
 ## Valid Extras
-- `path`: Change page URL
-- `alias`: Add single or multiple aliases to page, Module supports two types of aliases
-- - **Simple Alias**: These aliases are defined as simple strings. If `routerNativeAlias` is true, simple aliases will be added as router alias, see vue-router [docs](https://router.vuejs.org/guide/essentials/redirect-and-alias.html#alias)
-- - **Clone Alias**: These aliases are in form of object and they can have their own extras. These aliases will be added as an individual route. They can have their own props and they can have different number of url params
-- `meta`: Add Meta information to the page, meta can be used by middlewares
-- `props`: Pass predefined props to page
-- `name`: Define custom name for route.
+|     Extras       |  Support  | Description |
+|     -----        |  -------  | ----------- |
+| `path`           | JS & YAML | Change page URL |
+| `alias`          | JS & YAML | Add single or multiple aliases to page, Module supports two types of aliases <br> - **Simple Alias**: These aliases are defined as simple strings. If `routerNativeAlias` is true, simple aliases will be added as router alias, see vue-router [docs](https://router.vuejs.org/guide/essentials/redirect-and-alias.html#alias) <br/> - **Clone Alias**: These aliases are in form of object and they can have their own extras. These aliases will be added as an individual route. They can have their own props and they can have different number of url params |
+| `meta`           | JS & YAML | Add Meta information to the page, meta can be used by middlewares |
+| `name`           | JS & YAML | Define custom name for route |
+| `props`          | JS & YAML | Pass predefined props to page |
+| `beforeEnter`    | JS & YAML | Define `beforeEnter` guard for this route, see: [Global Before Guards](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards) |
+| `caseSensitive`  |   JS      | Use case sensitive route match (default: false) |
+| `redirect`       | JS & YAML | Redirect current page to new location|
     
 ## Syntax Highlighting
 ### Visual Studio Code
