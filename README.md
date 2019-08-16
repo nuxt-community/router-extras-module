@@ -32,15 +32,52 @@ Add `@nuxtjs/router-extras` to modules section of `nuxt.config.js`:
 ```
 ### Define custom paths for a page
 
-Simply add a block inside Vue file and define a path in [Yaml](https://en.wikipedia.org/wiki/YAML)
+Simply add a block inside Vue file and define a path in JavaScript or [Yaml](https://en.wikipedia.org/wiki/YAML)
+
+<details open>
+  <summary>JavaScript</summary>
+
 ```xml
 <router>
-    path: /posts
+  {
+    path: '/posts'
+  }
 </router>
 ```
+</details>
+<details>
+  <summary>Yaml</summary>
+
+```xml
+<router>
+  path: /posts
+</router>
+```
+</details>
+
+
 ### Define multiple aliases for single page
 
 If you want more paths for a single page, define them with aliases
+
+<details open>
+  <summary>JavaScript</summary>
+
+```xml
+<router>
+ {
+    path: '/posts',
+    alias: [
+      '/articles',
+      '/blog'
+    ]
+ }
+</router>
+```
+</details>
+<details>
+  <summary>Yaml</summary>
+
 ```xml
 <router>
     path: /posts
@@ -49,9 +86,35 @@ If you want more paths for a single page, define them with aliases
         - /blog
 </router>
 ```
+</details>
+
 Aliases can have their own props
+
+<details open>
+  <summary>JavaScript</summary>
+
 ```xml
-<router lang="yaml">
+<router>
+  {
+    path: '/posts',
+    alias: [
+      '/articles',
+      {
+        path: '/blog',
+        props: {
+          section: 'top-posts'
+        }
+      }
+    ]
+  }
+</router>
+```
+</details>
+<details>
+  <summary>Yaml</summary>
+
+```xml
+<router>
   path: /posts
   alias:
       - /articles
@@ -61,13 +124,30 @@ Aliases can have their own props
           section: top-posts
 </router>
 ```
+</details>
+
 ### Define multiple params regardless of pages directory structure
+
+<details open>
+  <summary>JavaScript</summary>
 
 ```xml
 <router>
-    path: /post/:id/:title?
+  {
+    path: '/post/:id/:title?'
+  }
 </router>
 ```
+</details>
+<details>
+  <summary>Yaml</summary>
+
+```xml
+<router>
+  path: /post/:id/:title?
+</router>
+```
+</details>
 
 ## Options
 
@@ -90,13 +170,16 @@ export default {
 ```
 
 ## Valid Extras
-- `path`: Change page URL
-- `alias`: Add single or multiple aliases to page, Module supports two types of aliases
-- - **Simple Alias**: These aliases are defined as simple strings. If `routerNativeAlias` is true, simple aliases will be added as router alias, see vue-router [docs](https://router.vuejs.org/guide/essentials/redirect-and-alias.html#alias)
-- - **Clone Alias**: These aliases are in form of object and they can have their own extras. These aliases will be added as an individual route. They can have their own props and they can have different number of url params
-- `meta`: Add Meta information to the page, meta can be used by middlewares
-- `props`: Pass predefined props to page
-- `name`: Define custom name for route.
+|     Extras       |  Support  | Description |
+|     -----        |  -------  | ----------- |
+| `path`           | JS & YAML | Change page URL |
+| `alias`          | JS & YAML | Add single or multiple aliases to page, Module supports two types of aliases <br> - **Simple Alias**: These aliases are defined as simple strings. If `routerNativeAlias` is true, simple aliases will be added as router alias, see vue-router [docs](https://router.vuejs.org/guide/essentials/redirect-and-alias.html#alias) <br/> - **Clone Alias**: These aliases are in form of object and they can have their own extras. These aliases will be added as an individual route. They can have their own props and they can have different number of url params |
+| `meta`           | JS & YAML | Add Meta information to the page, meta can be used by middlewares |
+| `name`           | JS & YAML | Define custom name for route |
+| `props`          | JS & YAML | Pass predefined props to page |
+| `beforeEnter`    | JS & YAML | Define `beforeEnter` guard for this route, see: [Global Before Guards](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards) |
+| `caseSensitive`  |   JS      | Use case sensitive route match (default: false) |
+| `redirect`       | JS & YAML | Redirect current page to new location|
     
 ## Syntax Highlighting
 ### Visual Studio Code
@@ -106,7 +189,7 @@ Install [Vetur](https://vuejs.github.io/vetur/) extension and define [custom blo
     "vetur.grammar.customBlocks": {
         "docs": "md",
         "i18n": "json",
-        "router": "yaml"
+        "router": "js"
     }
     ```
 - Execute command `> Vetur: Generate grammar from vetur.grammar.customBlocks` in VSCode

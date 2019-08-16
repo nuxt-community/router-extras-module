@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "fs-extra": "^8.1.0",
-    "js-yaml": "^3.13.1"
+    "gray-matter": "^4.0.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.1.2",
