@@ -177,8 +177,8 @@ export default {
 | `meta`           | JS & YAML | Add Meta information to the page, meta can be used by middlewares |
 | `name`           | JS & YAML | Define custom name for route |
 | `props`          | JS & YAML | Pass predefined props to page |
-| `beforeEnter`    | JS & YAML | Define `beforeEnter` guard for this route, see: [Global Before Guards](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards) |
-| `caseSensitive`  |   JS      | Use case sensitive route match (default: false) |
+| `beforeEnter`    |    JS     | Define `beforeEnter` guard for this route, see: [Global Before Guards](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards) |
+| `caseSensitive`  | JS & YAML | Use case sensitive route match (default: false) |
 | `redirect`       | JS & YAML | Redirect current page to new location|
     
 ## Syntax Highlighting
