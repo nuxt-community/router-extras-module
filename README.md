@@ -32,15 +32,52 @@ Add `@nuxtjs/router-extras` to modules section of `nuxt.config.js`:
 ```
 ### Define custom paths for a page
 
-Simply add a block inside Vue file and define a path in [Yaml](https://en.wikipedia.org/wiki/YAML)
+Simply add a block inside Vue file and define a path in JavaScript or [Yaml](https://en.wikipedia.org/wiki/YAML)
+
+<details open>
+  <summary>JavaScript</summary>
+
 ```xml
 <router>
-    path: /posts
+  {
+    path: '/posts'
+  }
 </router>
 ```
+</details>
+<details>
+  <summary>Yaml</summary>
+
+```xml
+<router>
+  path: /posts
+</router>
+```
+</details>
+
+
 ### Define multiple aliases for single page
 
 If you want more paths for a single page, define them with aliases
+
+<details open>
+  <summary>JavaScript</summary>
+
+```xml
+<router>
+ {
+    path: '/posts',
+    alias: [
+      '/articles',
+      '/blog'
+    ]
+ }
+</router>
+```
+</details>
+<details>
+  <summary>Yaml</summary>
+
 ```xml
 <router>
     path: /posts
@@ -49,9 +86,35 @@ If you want more paths for a single page, define them with aliases
         - /blog
 </router>
 ```
+</details>
+
 Aliases can have their own props
+
+<details open>
+  <summary>JavaScript</summary>
+
 ```xml
-<router lang="yaml">
+<router>
+  {
+    path: '/posts',
+    alias: [
+      '/articles',
+      {
+        path: '/blog',
+        props: {
+          section: 'top-posts'
+        }
+      }
+    ]
+  }
+</router>
+```
+</details>
+<details>
+  <summary>Yaml</summary>
+
+```xml
+<router>
   path: /posts
   alias:
       - /articles
@@ -61,13 +124,30 @@ Aliases can have their own props
           section: top-posts
 </router>
 ```
+</details>
+
 ### Define multiple params regardless of pages directory structure
+
+<details open>
+  <summary>JavaScript</summary>
 
 ```xml
 <router>
-    path: /post/:id/:title?
+  {
+    path: '/post/:id/:title?'
+  }
 </router>
 ```
+</details>
+<details>
+  <summary>Yaml</summary>
+
+```xml
+<router>
+  path: /post/:id/:title?
+</router>
+```
+</details>
 
 ## Options
 
@@ -106,7 +186,7 @@ Install [Vetur](https://vuejs.github.io/vetur/) extension and define [custom blo
     "vetur.grammar.customBlocks": {
         "docs": "md",
         "i18n": "json",
-        "router": "yaml"
+        "router": "js"
     }
     ```
 - Execute command `> Vetur: Generate grammar from vetur.grammar.customBlocks` in VSCode
