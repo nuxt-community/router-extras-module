@@ -16,20 +16,6 @@ All notable changes to this project will be documented in this file. See [standa
 * support multiple languages ([9cb845e](https://github.com/nuxt-community/router-extras-module/commit/9cb845e))
 * support multiple languages ([#61](https://github.com/nuxt-community/router-extras-module/issues/61)) ([cf0e448](https://github.com/nuxt-community/router-extras-module/commit/cf0e448))
 
-## [1.0.0](https://github.com/nuxt-community/router-extras-module/compare/v0.1.1...v1.0.0) (2019-08-16)
-
-
-### Bug Fixes
-
-* add router valid extras ([ab3c4e5](https://github.com/nuxt-community/router-extras-module/commit/ab3c4e5))
-* typo ([288093e](https://github.com/nuxt-community/router-extras-module/commit/288093e)), closes [#50](https://github.com/nuxt-community/router-extras-module/issues/50)
-
-
-### Features
-
-* support multiple languages ([9cb845e](https://github.com/nuxt-community/router-extras-module/commit/9cb845e))
-* support multiple languages ([#61](https://github.com/nuxt-community/router-extras-module/issues/61)) ([cf0e448](https://github.com/nuxt-community/router-extras-module/commit/cf0e448))
-
 ### [0.1.1](https://github.com/nuxt-community/router-extras-module/compare/v0.1.0...v0.1.1) (2019-07-17)
 
 
