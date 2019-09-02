@@ -1,7 +1,14 @@
-# Router Extras Module
-Extra add-ons for Nuxt router
+# @nuxtjs/router-extras
 
-**Demo**: https://codesandbox.io/s/github/nuxt-community/router-extras-module
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![Circle CI][circle-ci-src]][circle-ci-href]
+[![Codecov][codecov-src]][codecov-href]
+[![License][license-src]][license-href]
+
+> Extra add-ons for Nuxt router
+
+**Demo**: <https://codesandbox.io/s/github/nuxt-community/router-extras-module>
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
@@ -11,25 +18,53 @@ Extra add-ons for Nuxt router
 - Define multiple aliases for a single page
 - Define multiple params regardless of pages directory structure
 
-## Installation
+## Setup
+
+1. Add `@nuxtjs/router-extras` dependency to your project
 
 ```bash
-yarn add @nuxtjs/router-extras
-# or
-npm i @nuxtjs/router-extras
+yarn add --dev @nuxtjs/router-extras # or npm install --save-dev @nuxtjs/router-extras
 ```
 
-## Usage
+2. Add `@nuxtjs/router-extras` to the `buildModules` section of `nuxt.config.js`
 
-Add `@nuxtjs/router-extras` to modules section of `nuxt.config.js`:
+:warning: If you are using Nuxt `< 2.9.0`, use `modules` instea
 
 ```js
 {
-  modules: [
-    '@nuxtjs/router-extras'
+  buildModules: [
+    // Simple usage
+    '@nuxtjs/router-extras',
+
+    // With options
+    ['@nuxtjs/router-extras', { /* module options */ }]
   ]
 }
 ```
+
+### Using top level options
+
+```js
+{
+  buildModules: [
+    '@nuxtjs/router-extras'
+  ],
+  routerExtras: {
+    /* module options */
+  }
+}
+```
+
+## Options
+
+### `routerNativeAlias`
+
+- Default: `true`
+
+Simple aliases will be added as router alias, see [vue-router](https://router.vuejs.org/guide/essentials/redirect-and-alias.html#alias)
+
+## Usage
+
 ### Define custom paths for a page
 
 Simply add a block inside Vue file and define a path in JavaScript or [Yaml](https://en.wikipedia.org/wiki/YAML)
@@ -44,7 +79,9 @@ Simply add a block inside Vue file and define a path in JavaScript or [Yaml](htt
   }
 </router>
 ```
+
 </details>
+
 <details>
   <summary>Yaml</summary>
 
@@ -53,8 +90,8 @@ Simply add a block inside Vue file and define a path in JavaScript or [Yaml](htt
   path: /posts
 </router>
 ```
-</details>
 
+</details>
 
 ### Define multiple aliases for single page
 
@@ -74,7 +111,9 @@ If you want more paths for a single page, define them with aliases
  }
 </router>
 ```
+
 </details>
+
 <details>
   <summary>Yaml</summary>
 
@@ -86,6 +125,7 @@ If you want more paths for a single page, define them with aliases
         - /blog
 </router>
 ```
+
 </details>
 
 Aliases can have their own props
@@ -109,7 +149,9 @@ Aliases can have their own props
   }
 </router>
 ```
+
 </details>
+
 <details>
   <summary>Yaml</summary>
 
@@ -124,6 +166,7 @@ Aliases can have their own props
           section: top-posts
 </router>
 ```
+
 </details>
 
 ### Define multiple params regardless of pages directory structure
@@ -138,7 +181,9 @@ Aliases can have their own props
   }
 </router>
 ```
+
 </details>
+
 <details>
   <summary>Yaml</summary>
 
@@ -147,27 +192,8 @@ Aliases can have their own props
   path: /post/:id/:title?
 </router>
 ```
+
 </details>
-
-## Options
-
-Module default options:
-```js
-{
-  routerNativeAlias: true
-}
-```
-
-You can update them with the `routerExtras` option in `nuxt.config.js`:
-
-```js
-export default {
-  modules: ['@nuxtjs/router-extras'],
-  routerExtras: {
-    routerNativeAlias: false
-  }
-}
-```
 
 ## Valid Extras
 |     Extras       |  Support  | Description |
@@ -180,18 +206,23 @@ export default {
 | `beforeEnter`    |    JS     | Define `beforeEnter` guard for this route, see: [Global Before Guards](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards) |
 | `caseSensitive`  | JS & YAML | Use case sensitive route match (default: false) |
 | `redirect`       | JS & YAML | Redirect current page to new location|
-    
+
 ## Syntax Highlighting
+
 ### Visual Studio Code
+
 Install [Vetur](https://vuejs.github.io/vetur/) extension and define [custom block](https://vuejs.github.io/vetur/highlighting.html#custom-block)
+
 - Add `<router>` to `vetur.grammar.customBlocks` in VSCode settings
-    ```json
-    "vetur.grammar.customBlocks": {
-        "docs": "md",
-        "i18n": "json",
-        "router": "js"
-    }
-    ```
+
+```json
+"vetur.grammar.customBlocks": {
+    "docs": "md",
+    "i18n": "json",
+    "router": "js"
+}
+```
+
 - Execute command `> Vetur: Generate grammar from vetur.grammar.customBlocks` in VSCode
 - Restart VSCode and enjoy awesome
 
@@ -204,4 +235,21 @@ Install [Vetur](https://vuejs.github.io/vetur/) extension and define [custom blo
 ## License
 
 [MIT License](./LICENSE)
+
 Copyright (c) Nuxt Community
+
+<!-- Badges -->
+[npm-version-src]: https://img.shields.io/npm/v/@nuxtjs/router-extras/latest.svg?style=flat-square
+[npm-version-href]: https://npmjs.com/package/@nuxtjs/router-extras
+
+[npm-downloads-src]: https://img.shields.io/npm/dt/@nuxtjs/router-extras.svg?style=flat-square
+[npm-downloads-href]: https://npmjs.com/package/@nuxtjs/router-extras
+
+[circle-ci-src]: https://img.shields.io/circleci/project/github/nuxt-community/router-extras-module.svg?style=flat-square
+[circle-ci-href]: https://circleci.com/gh/nuxt-community/router-extras-module
+
+[codecov-src]: https://img.shields.io/codecov/c/github/nuxt-community/router-extras-module.svg?style=flat-square
+[codecov-href]: https://codecov.io/gh/nuxt-community/router-extras-module
+
+[license-src]: https://img.shields.io/npm/l/@nuxtjs/router-extras.svg?style=flat-square
+[license-href]: https://npmjs.com/package/@nuxtjs/router-extras

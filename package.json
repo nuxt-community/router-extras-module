@@ -2,57 +2,41 @@
   "name": "@nuxtjs/router-extras",
   "version": "1.0.0",
   "description": "Extra Add-ons for nuxt router",
+  "repository": "nuxt-community/router-extras-module",
   "license": "MIT",
   "contributors": [
-    {
-      "name": "Ahad Birang <farnabaz@gmail.com>"
-    },
-    {
-      "name": "Pooya Parsa <pooya@pi0.ir>"
-    }
-  ],
-  "main": "lib/module.js",
-  "repository": "nuxt-community/router-extras-module",
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "dev": "nuxt example",
-    "lint": "eslint --ext .js,.vue lib test",
-    "test": " yarn lint && nuxt build example --no-lock && jest",
-    "release": "standard-version && git push --follow-tags && npm publish"
-  },
-  "eslintIgnore": [
-    "lib/templates/*.*"
+    "Ahad Birang <farnabaz@gmail.com>",
+    "Pooya Parsa <pooya@pi0.ir>"
   ],
   "files": [
     "lib"
   ],
-  "jest": {
-    "testEnvironment": "node",
-    "collectCoverage": true
+  "main": "lib/module.js",
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue .",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "test": "yarn lint && jest"
   },
   "dependencies": {
-    "fs-extra": "^8.1.0",
+    "chokidar": "^3.0.2",
     "gray-matter": "^4.0.2"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^1.1.2",
-    "babel-eslint": "^10.0.2",
-    "bootstrap": "^4.3.1",
-    "bootstrap-vue": "^2.0.0-rc.28",
-    "codecov": "^3.5.0",
-    "eslint": "^6.2.1",
-    "eslint-config-standard": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.15.1",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-vue": "^5.2.3",
-    "jest": "^24.9.0",
-    "jsdom": "^15.1.1",
-    "nuxt-edge": "^2.9.0-26104328.b22e0543",
-    "standard-version": "^7.0.0"
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "@nuxtjs/module-test-utils": "latest",
+    "bootstrap": "latest",
+    "bootstrap-vue": "latest",
+    "codecov": "latest",
+    "eslint": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "nuxt-edge": "latest",
+    "standard-version": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
