@@ -1,19 +1,11 @@
-const path = require('path')
-const { Nuxt } = require('nuxt-edge')
-const request = require('request-promise-native')
+const { setup, loadConfig, get } = require('@nuxtjs/module-test-utils')
 
-const url = path => `http://localhost:3000${path}`
-const get = path => request(url(path))
-
-describe('basic', () => {
+describe('prod', () => {
   let nuxt
 
-  test('start', async () => {
-    nuxt = new Nuxt({
-      rootDir: path.resolve(__dirname, '..', 'example')
-    })
-    await nuxt.listen(3000)
-  })
+  beforeAll(async () => {
+    ({ nuxt } = (await setup(loadConfig(__dirname, '../../example', { dev: false }))))
+  }, 60000)
 
   afterAll(async () => {
     await nuxt.close()
@@ -29,7 +21,12 @@ describe('basic', () => {
     expect(html).toContain('manipulate Nuxt router')
   })
 
-  describe('Child Routes', () => {
+  test('render number page', async () => {
+    const html = await get('/number-page')
+    expect(html).toContain('number page')
+  })
+
+  describe('child routes', () => {
     test('render parent', async () => {
       const html = await get('/parent')
       expect(html).toContain('parent')
@@ -48,7 +45,7 @@ describe('basic', () => {
     })
   })
 
-  describe('Advanced Aliases', () => {
+  describe('advanced aliases', () => {
     test('render installation section', async () => {
       const html = await get('/doc/installation')
       expect(html).toContain('Router Extras Module')

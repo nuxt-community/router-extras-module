@@ -1,12 +1,13 @@
 <template>
   <div>
-    JavaScript Router Block
+    number page
   </div>
 </template>
 
-<router foo="bar">
+<router>
 {
-    path: '/lang/a-js'
+    path: 1515,
+    alias: '/number-page'
 }
 </router>
 
@@ -15,7 +16,3 @@ export default {
 
 }
 </script>
-
-<style>
-
-</style>

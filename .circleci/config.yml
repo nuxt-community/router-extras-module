@@ -22,10 +22,15 @@ jobs:
           paths:
             - "node_modules"
 
-      # Test
+      # Lint
+      - run:
+          name: Lint
+          command: yarn lint
+
+      # Tests
       - run:
           name: Tests
-          command: yarn test
+          command: yarn jest
 
       # Coverage
       - run:
