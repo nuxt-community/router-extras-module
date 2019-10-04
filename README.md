@@ -28,7 +28,7 @@ yarn add --dev @nuxtjs/router-extras # or npm install --save-dev @nuxtjs/router-
 
 2. Add `@nuxtjs/router-extras` to the `buildModules` section of `nuxt.config.js`
 
-:warning: If you are using Nuxt `< 2.9.0`, use `modules` instea
+:warning: If you are using Nuxt `< 2.9.0`, use `modules` instead.
 
 ```js
 {
