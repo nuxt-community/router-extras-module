@@ -195,6 +195,46 @@ Aliases can have their own props
 
 </details>
 
+
+### Define named views for the page
+
+<details open>
+  <summary>JavaScript</summary>
+
+```xml
+<router>
+{
+  namedViews: {
+    currentView: 'main',
+    views: {
+      side: '~/components/side.vue'
+    },
+    chunkNames: {
+      side: 'components/side'
+    }
+  }
+}
+</router>
+```
+
+</details>
+
+<details>
+  <summary>Yaml</summary>
+
+```xml
+<router>
+  namedViews:
+    currentView: "main"
+    views:
+      side: "~/components/side.vue"
+    chunkNames:
+      side: "~/components/side.vue"
+</router>
+```
+
+</details>
+
 ## Valid Extras
 |     Extras       |  Support  | Description |
 |     -----        |  -------  | ----------- |
@@ -206,6 +246,18 @@ Aliases can have their own props
 | `beforeEnter`    |    JS     | Define `beforeEnter` guard for this route, see: [Global Before Guards](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards) |
 | `caseSensitive`  | JS & YAML | Use case sensitive route match (default: false) |
 | `redirect`       | JS & YAML | Redirect current page to new location|
+| `namedViews`     | JS & YAML | Add named view to the path, see [Named Views Support](#named-views-support) |
+
+## Named views support
+
+There is support for [named views in nuxt](https://nuxtjs.org/guide/routing#named-views), but it requires the user to write a lot of boilerplate code in the config. The `namedViews` property in the `<router>` block allows for a more streamlined configuration 
+
+Named views key is a bit different from all other settings. It expects an object with following properties:
+- `currentView`: actual view name for the current component. Defaults to `"default"`, to be rendered in plain `<nuxt-child />`
+- `views`: object, where keys are view names and values are component paths. It supports all expected path resolution (`~/` and others)
+- `chunkNames`: object, where keys are view names and values are webpack chunks for them. Object structure is expected to be equal to `views` - all the same keys must be present.
+
+For usage example see `example/pages/namedParent.vue` and `example/pages/namedParent/namedChild.vue`. 
 
 ## Syntax Highlighting
 
