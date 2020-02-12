@@ -60,4 +60,14 @@ describe('dev', () => {
       expect(html).not.toContain('yarn add @nuxtjs/router-extras')
     })
   })
+
+  describe('named views', () => {
+    test('render child with named component', async () => {
+      const html = await get('/namedParent/namedChild')
+      expect(html).toContain('Named parent')
+      expect(html).toContain('Named child')
+      expect(html).toContain('Side component')
+      expect(html).toContain('Other side component')
+    })
+  })
 })
