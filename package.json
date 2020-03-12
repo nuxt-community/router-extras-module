@@ -23,18 +23,18 @@
     "gray-matter": "^4.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "latest",
-    "@commitlint/config-conventional": "latest",
-    "@nuxtjs/eslint-config": "latest",
-    "@nuxtjs/module-test-utils": "latest",
-    "bootstrap": "latest",
-    "bootstrap-vue": "latest",
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "@nuxtjs/eslint-config": "2.0.2",
+    "@nuxtjs/module-test-utils": "1.5.0",
+    "bootstrap": "4.4.1",
+    "bootstrap-vue": "2.6.1",
     "codecov": "latest",
-    "eslint": "latest",
-    "husky": "latest",
-    "jest": "latest",
-    "nuxt-edge": "latest",
-    "standard-version": "latest"
+    "eslint": "6.8.0",
+    "husky": "4.2.3",
+    "jest": "25.1.0",
+    "nuxt-edge": "2.12.0-26399536.2afddf03",
+    "standard-version": "7.1.0"
   },
   "publishConfig": {
     "access": "public"
