@@ -1,6 +1,6 @@
 {
   "name": "@nuxtjs/router-extras",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Extra Add-ons for nuxt router",
   "repository": "nuxt-community/router-extras-module",
   "license": "MIT",
