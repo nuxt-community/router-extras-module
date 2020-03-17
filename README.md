@@ -278,6 +278,13 @@ Install [Vetur](https://vuejs.github.io/vetur/) extension and define [custom blo
 - Execute command `> Vetur: Generate grammar from vetur.grammar.customBlocks` in VSCode
 - Restart VSCode and enjoy awesome
 
+### PhpStorm/WebStorm
+- Use Yaml syntax
+- Place cursor right after <router> tag
+- Right click on cursor and choose "Show context actions"
+- Select Inject language or reference
+- Select Yaml
+
 ## Development
 
 - Clone this repository
