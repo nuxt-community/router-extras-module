@@ -27,7 +27,7 @@
     "@commitlint/config-conventional": "8.3.4",
     "@nuxtjs/eslint-config": "2.0.2",
     "@nuxtjs/module-test-utils": "1.6.1",
-    "bootstrap": "4.4.1",
+    "bootstrap": "4.5.0",
     "bootstrap-vue": "2.15.0",
     "codecov": "latest",
     "eslint": "7.3.1",
