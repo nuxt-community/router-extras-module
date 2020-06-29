@@ -28,7 +28,7 @@
     "@nuxtjs/eslint-config": "2.0.2",
     "@nuxtjs/module-test-utils": "1.6.1",
     "bootstrap": "4.4.1",
-    "bootstrap-vue": "2.10.0",
+    "bootstrap-vue": "2.15.0",
     "codecov": "latest",
     "eslint": "7.1.0",
     "husky": "4.2.3",
