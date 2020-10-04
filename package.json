@@ -33,7 +33,7 @@
     "eslint": "7.10.0",
     "husky": "4.3.0",
     "jest": "25.5.4",
-    "nuxt-edge": "^2.14.7-26694757.61e93d01",
+    "nuxt-edge": "^2.14.7-26696199.61e93d01",
     "standard-version": "9.0.0"
   },
   "publishConfig": {
