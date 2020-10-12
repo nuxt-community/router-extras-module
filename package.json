@@ -30,10 +30,10 @@
     "bootstrap": "4.5.2",
     "bootstrap-vue": "2.17.3",
     "codecov": "latest",
-    "eslint": "7.10.0",
+    "eslint": "7.11.0",
     "husky": "4.3.0",
     "jest": "25.5.4",
-    "nuxt-edge": "^2.14.7-26696199.61e93d01",
+    "nuxt-edge": "^2.14.7-26707719.a748cf0c",
     "standard-version": "9.0.0"
   },
   "publishConfig": {
