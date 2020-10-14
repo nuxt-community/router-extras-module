@@ -19,7 +19,7 @@
     "test": "yarn lint && jest"
   },
   "dependencies": {
-    "chokidar": "^3.4.2",
+    "chokidar": "^3.4.3",
     "gray-matter": "^4.0.2"
   },
   "devDependencies": {
@@ -27,13 +27,13 @@
     "@commitlint/config-conventional": "8.3.4",
     "@nuxtjs/eslint-config": "2.0.2",
     "@nuxtjs/module-test-utils": "1.6.3",
-    "bootstrap": "4.5.2",
+    "bootstrap": "4.5.3",
     "bootstrap-vue": "2.17.3",
     "codecov": "latest",
     "eslint": "7.11.0",
     "husky": "4.3.0",
     "jest": "25.5.4",
-    "nuxt-edge": "^2.14.7-26707719.a748cf0c",
+    "nuxt-edge": "^2.14.7-26710597.5842a645",
     "standard-version": "9.0.0"
   },
   "publishConfig": {
