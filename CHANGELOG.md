@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/nuxt-community/router-extras-module/compare/v1.1.0...v1.1.1) (2020-11-22)
+
+
+### Bug Fixes
+
+* **alias:** ability to redefine alias name ([2621638](https://github.com/nuxt-community/router-extras-module/commit/2621638019555de6df8aed3610704a62199e1649))
+* **extend-route:** insert custom routes before unknown routes ([#123](https://github.com/nuxt-community/router-extras-module/issues/123)) ([4494f55](https://github.com/nuxt-community/router-extras-module/commit/4494f551750b308f3ff1d47bf54c41c5e79ab343))
+
 ## [1.1.0](https://github.com/nuxt-community/router-extras-module/compare/v1.0.0...v1.1.0) (2020-03-12)
 
 

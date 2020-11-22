@@ -1,6 +1,6 @@
 {
   "name": "@nuxtjs/router-extras",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Extra Add-ons for nuxt router",
   "repository": "nuxt-community/router-extras-module",
   "license": "MIT",
@@ -19,22 +19,22 @@
     "test": "yarn lint && jest"
   },
   "dependencies": {
-    "chokidar": "^3.3.1",
+    "chokidar": "^3.4.3",
     "gray-matter": "^4.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
-    "@nuxtjs/eslint-config": "2.0.2",
-    "@nuxtjs/module-test-utils": "1.5.0",
-    "bootstrap": "4.4.1",
-    "bootstrap-vue": "2.6.1",
+    "@nuxtjs/eslint-config": "5.0.0",
+    "@nuxtjs/module-test-utils": "1.6.3",
+    "bootstrap": "4.5.3",
+    "bootstrap-vue": "2.19.0",
     "codecov": "latest",
-    "eslint": "6.8.0",
-    "husky": "4.2.3",
-    "jest": "25.1.0",
-    "nuxt-edge": "2.12.0-26399536.2afddf03",
-    "standard-version": "7.1.0"
+    "eslint": "7.14.0",
+    "husky": "4.3.0",
+    "jest": "25.5.4",
+    "nuxt-edge": "^2.14.7-26712039.c75ac80f",
+    "standard-version": "9.0.0"
   },
   "publishConfig": {
     "access": "public"
