@@ -279,11 +279,10 @@ Install [Vetur](https://vuejs.github.io/vetur/) extension and define [custom blo
 - Restart VSCode and enjoy awesome
 
 ### PhpStorm/WebStorm
-- Use Yaml syntax
 - Place cursor right after <router> tag
 - Right click on cursor and choose "Show context actions"
 - Select Inject language or reference
-- Select Yaml
+- Select "JSON5" for JavaScript or "Yaml" for YAML
 
 ## Development
 
