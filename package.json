@@ -31,7 +31,7 @@
     "bootstrap-vue": "2.21.2",
     "codecov": "latest",
     "eslint": "7.18.0",
-    "husky": "4.3.8",
+    "husky": "5.0.9",
     "jest": "25.5.4",
     "nuxt-edge": "^2.14.7-26712039.c75ac80f",
     "standard-version": "9.1.0"
