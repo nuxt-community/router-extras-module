@@ -32,7 +32,7 @@
     "codecov": "latest",
     "eslint": "7.27.0",
     "husky": "6.0.0",
-    "jest": "25.5.4",
+    "jest": "27.0.3",
     "nuxt-edge": "^2.14.7-26712039.c75ac80f",
     "standard-version": "9.3.0"
   },
