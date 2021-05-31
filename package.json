@@ -20,21 +20,21 @@
   },
   "dependencies": {
     "chokidar": "^3.5.1",
-    "gray-matter": "^4.0.2"
+    "gray-matter": "^4.0.3"
   },
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
-    "@nuxtjs/eslint-config": "6.0.0",
+    "@nuxtjs/eslint-config": "6.0.1",
     "@nuxtjs/module-test-utils": "1.6.3",
     "bootstrap": "5.0.1",
     "bootstrap-vue": "2.21.2",
     "codecov": "latest",
-    "eslint": "7.19.0",
+    "eslint": "7.27.0",
     "husky": "6.0.0",
     "jest": "25.5.4",
     "nuxt-edge": "^2.14.7-26712039.c75ac80f",
-    "standard-version": "9.1.0"
+    "standard-version": "9.3.0"
   },
   "publishConfig": {
     "access": "public"
