@@ -6,7 +6,9 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> Extra add-ons for Nuxt router
+> Extra add-ons for Nuxt 2 router
+
+Looking for a Nuxt 3 alternative? Use the core composable [definePageMeta](https://nuxt.com/docs/api/utils/define-page-meta#definepagemeta).
 
 **Demo**: <https://codesandbox.io/s/github/nuxt-community/router-extras-module>
 
