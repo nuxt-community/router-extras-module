@@ -6,13 +6,26 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> Extra add-ons for Nuxt 2 router
-
-Looking for a Nuxt 3 alternative? Use the core composable [definePageMeta](https://nuxt.com/docs/api/utils/define-page-meta#definepagemeta).
+Extra add-ons for Nuxt 2 router
 
 **Demo**: <https://codesandbox.io/s/github/nuxt-community/router-extras-module>
 
 [📖 **Release Notes**](./CHANGELOG.md)
+
+## Nuxt 3
+
+Looking for a Nuxt 3 alternative? Use the core composable [definePageMeta](https://nuxt.com/docs/api/utils/define-page-meta#definepagemeta).
+
+Example:
+
+```vue
+<script setup>
+definePageMeta({
+  path: '/posts',
+  alias: ['/articles', '/blog']
+})
+</script>
+```
 
 ## Features
 
